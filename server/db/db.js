@@ -9,7 +9,6 @@ const client = new Sequelize(dbUrl, {
   logging: false,
   operatorsAliases: false,
   dialetOptions: { ssl: { require: true, rejectUnauthorized: false } },
-  ssl: true,
 });
 
 module.exports = client;
