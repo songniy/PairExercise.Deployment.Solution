@@ -1,9 +1,11 @@
 const Sequelize = require('sequelize');
 const pkg = require('../../package.json');
 const dbName = process.env.NODE_ENV === 'test' ? `${pkg.name}-test` : pkg.name;
-const dbUrl = process.env.DATABASE_URL || `postgres://localhost:5432/${dbName}`;
+const dbUrl = process.env.DATABASE_URL;
+//|| `postgres://localhost:5432/${dbName}`;
 const client = new Sequelize(dbUrl, {
   dialect: 'postgres',
+  protocol: 'postgres',
   logging: false,
   operatorsAliases: false,
   dialetOptions: { ssl: { require: true, rejectUnauthorized: false } },
