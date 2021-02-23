@@ -5,7 +5,7 @@ export default ({ users }) => (
   <div className='user-list'>
     <p className='lead'>
       Here's a list of {users.length} completely fictitious people: some text to
-      test travis CI
+      test travis CI More stuff added to test again
     </p>
 
     <table className='table'>
