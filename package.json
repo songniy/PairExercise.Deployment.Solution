@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-client": "webpack -p",
-    "deploy": "script/deploy",
-    "deploy-win": "C:/Users/songn/OneDrive/Documents/fullstack/SeniorPhase/PairExercise.Deployment.Solution/script/windows-deploy.bat",
+    "deploy": "bash script/deploy",
     "heroku-token": "node script/encrypt-heroku-auth-token.js",
     "seed": "node script/seed.js",
     "start": "node server/index.js",
